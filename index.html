@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversation Piece</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: 'Wren';
-            src: url('font/wren.woff') format('woff'),
-                 url('font/wren.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -21,7 +15,7 @@
         }
 
         body {
-            font-family: 'Wren', Georgia, serif;
+            font-family: 'Fleur De Leah', cursive;
         }
 
         .container {
@@ -29,14 +23,21 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 1rem;
         }
 
         h1 {
             color: white;
-            font-size: 4rem;
+            font-size: clamp(2.5rem, 10vw, 4rem);
             font-weight: normal;
             text-align: center;
             letter-spacing: 0.02em;
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                background-position: center 33% !important;
+            }
         }
     </style>
 </head>
